@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+   
+</head>
+<body>
+    <div class="login-box">
+        <img src="images/logo.png" class="imagen" alt="image">
+    
+        <h1>Registro Usuario</h1>
+        <form name="form1" class="form" id="form1" method="post" autocomplete="off" >
+            
+            <div class="input-text">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <label for="nombre"></label>
+                <input type="text" name="input-nombre" id="input-nombre" placeholder="Tu Nombre">
+            </div>
+            
+            <div class="input-text">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <label for="apellido"></label>
+                <input type="text" name="input-apellido" id="input-apellido" placeholder="Tu Apellido">
+            </div>
+            
+            <div class="input-text">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <label for="telefono"></label>
+                <input type="number" name="input-telefono" id="input-telefono"  placeholder="Tu Teléfono">
+            </div>
+            
+            <div class="input-text">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <label for="correo"></label>
+                <input type="email" name="input-correo" id="input-correo"  placeholder="Digite E-mail">
+            </div>
+            
+            <div>
+                <input type="submit" class="submit" name="submit" value="Registrar">
+            </div>
+            
+        </form>
+    </div>
+        
+    
+    <div class="cont-table">
+        <table id="registro">
+            
+            <h1 class="titulo">Datos registrados</h1>
+            
+
+
+        <input class="fontAwesome"
+        type="text"
+        placeholder="&#xf007; Apellido"
+        id="input-apellido"
+        required
+        />
+        
+        <input class="fontAwesome"
+        type="text"
+        placeholder="&#xf095; Telefono"
+        id="input-telefono"
+        required
+        />
+        
+        <input class="fontAwesome"
+          type="text"
+          placeholder="&#xf2b6; Correo electronico"
+          id="input-correo"
+          required
+        />
+        <input
+          class="submit"
+          type="submit"
+          value="Registrar"
+          onclick="addRow()"
+        />
+      </form>
+      
+    </section>
+    <section class="table-container">  
+        <table class="show" id="table-body">
+          <thead>
+            <tr class="required-data">
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Telefono</th>
+              <th>Correo</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr class="data">
+              <td>Lina Paola</td>
+              <td>Espinosa Zambrano</td>
+              <td>3043771921</td>
+              <td>linp@gmail.com</td>
+            </tr>
+            <tr class="data">
+              <td>Lina Paola</td>
+              <td>Espinosa Zambrano</td>
+              <td>3043771921</td>
+              <td>linp@gmail.com</td>
+            </tr>
+  
+            <tr></tr>
+          </tbody>
+        </table>
+      </section>
+      <script src="/index.js"></script>
+  </body>
+  
+</html>

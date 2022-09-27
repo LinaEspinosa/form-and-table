@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;700&family=Montserrat:wght@300;400;700&family=Poppins:wght@100;300&display=swap');
+
+:root{
+    --btn-color:  #37c88b;
+    --text-color: #74817c;
+    --text-font:  'Poppins', sans-serif;
+    
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+body {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background-image: linear-gradient(
+    to bottom,
+    #96beb4,
+    #a3c6b8,
+    #b1cebd,
+    #bed5c3,
+    #ccddc9,
+    #c6d7c4,
+    #bfd1be,
+    #b9cbb9,
+    #9db6a7,
+    #83a197,
+    #6a8c87,
+    #527878
+  );
+  
+  
+  
+}
+
+
+
+/* section, */
+form {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+}
+
+form {
+  background-image: linear-gradient(
+    to bottom,
+    #caded9,
+    #d1e2da,
+    #d9e5db,
+    #e1e9dc,
+    #e9ecdf
+  );
+  border-radius: 20px;
+  width: 20vw;
+  height: 60vh;
+ 
+}
+.fontAwesome {
+    font-family: 'Poppins', 'FontAwesome', sans-serif;
+    
+  }
+
+  .title{
+    padding:0 5px;
+  }
+input {
+  outline: none;
+  background-color: #f5f5f5;
+  border: 0;
+  padding: 7px;
+  margin: 5px;
+  width: 14vw
+}
+
+
+.camera {
+  background-color: #fcffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 5%;
+  
+  -webkit-box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+}
+
+.submit {
+  background-color: var(--btn-color);
+  border-radius: 15px;
+  width: 13vw;
+  padding: 5px px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.table-container{
+    
+    width: 80%;
+}
+
+.table-container{
+    table-layout:fixed; /*la tabla renderiza mucho más rápido*/
+    border-collapse:collapse;
+    -webkit-box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+    text-align: left;
+    overflow: hidden;
+    
+}
+
+.table-container table {
+    border:none;
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    background-image: linear-gradient(to bottom, #eeeff8, #f3f3fa, #f7f7fb, #fbfbfd, #ffffff);
+    padding: 0.5rem 1rem;
+    
+   
+
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+/* Para 320px */
+@media only screen and (max-width: 340px) and (min-width: 5px) {
+    form {
+      width: 80vw;
+      height:50vh;
+    }
+    .fontAwesome {
+      width: 50vw;
+    }
+    .submit {
+      width: 45vw;
+    }
+    h3{
+        font-size:15px;
+    }
+  }
+  /* Para 480px */
+  @media only screen and (max-width: 500px) and (min-width: 341px) {
+    form {
+      width: 65vw;
+     
+    }
+    .fontAwesome {
+      width: 50vw;
+    }
+    .submit {
+      width: 45vw;
+    }
+  }
+ /* Para 600px */
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+    form {
+      width: 50vw;
+    }
+  
+    .fontAwesome {
+      width: 35vw;
+    }
+
+    .submit{
+        width:30vw
+    }
+  }
+  /* Para 800px */
+  @media only screen and (max-width: 820px) and (min-width: 621px) {
+    form {
+        width: 35vw;
+      }
+    
+      .fontAwesome {
+        width: 25vw;
+      }
+  
+      .submit{
+          width:20vw
+      }
+    }
+  
+  /* Para 1000x */
+  @media only screen and (max-width: 1024px) and (min-width: 821px) {
+    form {
+        width: 25vw;
+      }
+    
+      .fontAwesome {
+        width: 20vw;
+      }
+  
+      .submit{
+          width:18vw
+      }
+    }
+  
+  /* Para 1300x */
+  /* @media only screen and (max-width: 1500px) and (min-width: 1025px) {
+    form {
+      width: 25vw;
+      height: 65vh;
+    }
+    .fontAwesome {
+      width: 15vw;
+    }
+    .submit {
+      width: 14vw;
+    }
+  } */
+  
